@@ -26,7 +26,7 @@ brew update
 brew install imagemagick
 ~~~
 
-EN **Ubuntu**: 
+EN **Ubuntu**:
 
 ~~~
 sudo apt-get update
@@ -52,7 +52,7 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
 
 - Crear un controlador de *users* vacío.
 
-- En el controller **users** crear el método **new**. 
+- En el controller **users** crear el método **new**.
 
 - En el controller **users** crear el método **user_params**. Este método debe permitir y retornar los campos necesarios para la creación de un nuevo usuario, es decir, name, email y password.
 
@@ -63,7 +63,7 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
     - El formulario debe ser generado utilizando el helper *form_with* añadiendo el modelo y debe implementar las clases de bootstrap (revisar docs).
 
     ~~~ruby
-    <%= form_with(model: @user) do |form| %>
+    <%= form_with(model: @user) do |form| 
     ~~~
 
     - Donde **@user** debe ser declarado en el método correspondiente (new) como una nueva instancia de **User**.
@@ -71,8 +71,8 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
     - El formulario debe tener el campo para *name*, *email* y *password*.
 
 - Crear los métodos current_user y logged? en **UsersHelper**.
- 
-	
+
+
 - Añadir ruta de **sessions** para crear y destruir sesion de usuario.
 
 	~~~ruby
